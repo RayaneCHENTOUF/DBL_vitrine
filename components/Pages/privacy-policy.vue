@@ -1,0 +1,119 @@
+<template>
+    <div class="privacy-policy">
+      <h1>Dawn Breeze Limited - Privacy Policy</h1>
+      <p>Last updated: {{ lastUpdated }}</p>
+  
+      <section>
+        <h2>1. Personal Data Collection</h2>
+        <p>Dawn Breeze Limited collects the following personal information through our forms:</p>
+        <ul>
+          <li>First and last name</li>
+          <li>Postal address</li>
+          <li>Phone number</li>
+          <li>Email address</li>
+        </ul>
+        <p>This information is collected when you:</p>
+        <ul>
+          <li>Request a quote</li>
+          <li>Make a reservation</li>
+          <li>Contact us through our contact form</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>2. Use of Data</h2>
+        <p>We use your personal data to:</p>
+        <ul>
+          <li>Provide the services you have requested</li>
+          <li>Manage your reservations</li>
+          <li>Contact you regarding your inquiries</li>
+          <li>Improve our services and your user experience</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>3. Third-Party Sharing</h2>
+        <p>We share certain data with the following third-party services:</p>
+        <ul>
+          <li><strong>ORS (OpenRouteService)</strong>: For distance and route calculations</li>
+          <li><strong>EmailJS</strong>: For email communications</li>
+        </ul>
+        <p>These third-party services are subject to their own privacy policies, and we ensure they comply with current data protection standards.</p>
+      </section>
+  
+      <section>
+        <h2>4. Cookies and Tracking Technology</h2>
+        <p>Our website uses cookies to enhance your browsing experience. By using our site, you agree to the use of cookies in accordance with this policy.</p>
+        <p>You can control and/or delete cookies as you wish. For more information about cookies, visit <a href="https://www.allaboutcookies.org" target="_blank">AllAboutCookies.org</a>.</p>
+      </section>
+  
+      <section>
+        <h2>5. Your Rights</h2>
+        <p>In accordance with GDPR, you have the following rights:</p>
+        <ul>
+          <li>Right to access your personal data</li>
+          <li>Right to rectify inaccurate data</li>
+          <li>Right to erasure of your data</li>
+          <li>Right to restrict processing</li>
+          <li>Right to data portability</li>
+          <li>Right to object to processing</li>
+        </ul>
+      </section>
+  
+      <section class="contact-info">
+        <h2>6. Contact Us</h2>
+        <p>For any questions regarding this privacy policy or to exercise your rights, you can contact Dawn Breeze Limited:</p>
+        <ul>
+          <li>By email: privacy@dawnbreeze.com</li>
+          <li>By mail: Dawn Breeze Limited, [Your Address]</li>
+          <li>By phone: [Your Phone Number]</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>7. Changes to This Policy</h2>
+        <p>Dawn Breeze Limited reserves the right to update this privacy policy at any time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last updated" date at the top of this policy.</p>
+      </section>
+    </div>
+  </template>
+  
+  <script setup lang="ts">
+  import { ref } from 'vue';
+  
+  const lastUpdated = ref(new Date().toLocaleDateString('en-US'));
+  </script>
+  
+  <style scoped>
+  .privacy-policy {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  h2 {
+    color: #34495e;
+    margin-top: 30px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  </style>
+  
